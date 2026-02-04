@@ -15,9 +15,7 @@ Bank-System-CPP/
 │ └─ Clients.txt # File to store client data
 │
 ├─ src/
-│ ├─ Client.h # Client struct and function declarations
-│ ├─ Client.cpp # Implementation of client operations
-│ └─ main.cpp # Main program and menu interface
+│ ├─ main.cpp # Main program and menu interface
 │
 ├─ .gitignore # Ignore build files (exe, o, etc.)
 └─ README.md # Project overview
@@ -45,5 +43,33 @@ Bank-System-CPP/
 1. Clone the repository:
 ```bash
 git clone https://github.com/DEADCODE0O/Bank-System-CPP.git
+Navigate to the project folder:
 
+cd Bank-System-CPP/src
+Compile the code using a C++ compiler (e.g., g++):
 
+g++ main.cpp -o bank.exe
+Run the program:
+
+./bank.exe   # or bank.exe on Windows
+Follow the on-screen menu to manage clients and perform transactions.
+
+🛠️ Dependencies
+Standard C++ library (no external dependencies)
+
+Compatible with Windows, Linux, and Mac (console-based)
+
+📂 Data Storage
+All client data is stored in data/Clients.txt
+
+Format: AccountNumber#//#PinCode#//#Name#//#Phone#//#AccountBalance
+
+Example:
+
+12345#//#4321#//#John Doe#//#0123456789#//#5000.50
+💡 Notes
+Input validation is implemented to prevent duplicate account numbers and invalid transactions.
+
+The system uses console-based menus for easy navigation.
+
+Designed for learning and practice in file handling, structs, and basic C++ programming.
